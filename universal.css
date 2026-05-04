@@ -102,7 +102,7 @@ header * {
     color: var(--contrast-colour);
 }
 .thinDivider {
-    border-right: 1px solid var(--standard-button-outline);
+    border-right: 1px solid var(--contrast-colour);
     min-width: 1px;
     height: 1rem;
 }

@@ -24,7 +24,7 @@ export function MenuBar() {
             <div className="miniNavBarGroup">
                 <DividerBar dividerObject={<span className="thinDivider"/>}>
                     <StandardMenuButton to="/featured_blogs">Featured Blogs</StandardMenuButton>
-                    <StandardMenuButton to="/fix_your_life">Fix Your Life</StandardMenuButton>
+                    <StandardMenuButton to="https://kidshelpline.com.au/">Fix Your Life</StandardMenuButton>
                     <StandardMenuButton to="/blogs">Blogs</StandardMenuButton>
                 </DividerBar>
             </div>
