@@ -1,0 +1,15 @@
+:root {
+    --accent-colour: rgb(167, 15, 15);
+}
+header {
+    background: var(--accent-colour);
+}
+header .heading_logo {
+    color: #ffffff;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
