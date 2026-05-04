@@ -3,7 +3,7 @@ import { StrictMode } from "./react";
 import { createRoot } from "./react-dom/client";
 import { BrowserRouter, Routes, Route, NavLink, useLocation } from "./react-router-dom";
 import { MenuBar } from "./menu_bar.js";
-import { ArpanetPage } from "./arpanet.js";
+import { ArpanetPage } from "./pages/arpanet.js";
 const header = document.querySelector("body");
 if (!header)
     throw new Error("header does not exist");

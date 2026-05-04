@@ -1,5 +1,7 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useContext } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { AppContext } from "./app.js";
+import { resourceStringMap } from "./resourceStringMap.js";
 export interface MenuButtonProps extends React.ComponentProps<typeof NavLink> {
     buttonProps: React.ComponentProps<"button">,
     children?: React.ReactNode
@@ -15,11 +17,14 @@ export function MenuBar() {
         Connecting Me and You
     </NavLink>
         <div className="navbar">
+            <MenuButton buttonProps={{}} to="/f">404 Not Found</MenuButton>
             <MenuButton buttonProps={{}} to="/arpanet">Hello</MenuButton>
         </div></header>
 }
 export function MenuNavLinkDisplay() {
+    const appContext = useContext(AppContext);
+    const location = useLocation();
     return <div className="navigation">
-            {""}
+            {resourceStringMap[location.pathname] ?? "Unknown Page"}
         </div>
 }
