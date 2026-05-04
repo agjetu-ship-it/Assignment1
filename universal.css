@@ -6,6 +6,8 @@
     --standard-colour: rgb(0, 0, 0);
     --contrast-colour: rgb(255, 255, 255);
     --secondary-colour: rgb(128, 128, 128);
+    --standard-button-outline: rgb(176, 176, 176);
+    --standard-button-fill: rgb(246, 246, 246);
     /* --header-colour: rgb(144, 144, 144); */
 }
 header {
@@ -69,6 +71,27 @@ header * {
     cursor: pointer;
     filter: brightness(120%);
 }
+.maxImageSize {
+    max-width: 200px;
+    height: auto;
+}
+.blogCard {
+    background-color: var(--contrast-colour);
+    border: 1px solid var(--standard-button-outline);
+    padding: 1rem;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.borderlessTitle {
+    margin: 0;
+}
+.blogFolder {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
 header .heading_logo {
     color: var(--contrast-colour);
 }
@@ -100,8 +123,8 @@ h1 {
 }
 .standardButton {
     color: var(--standard-colour);
-    background-color: rgb(246, 246, 246);
-    border: 1px solid rgb(176, 176, 176);
+    background-color: var(--standard-button-fill);
+    border: 1px solid var(--standard-button-outline);
     /* display: block; */
     padding: 0.5rem 1rem;
 }

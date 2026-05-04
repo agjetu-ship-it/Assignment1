@@ -14,7 +14,7 @@ export function MenuButton({buttonProps, children, ...props}: MenuButtonProps) {
 export function MenuBar() {
     return <header>
     <NavLink to="/home" className="heading_logo standard noLink">
-        Connecting Me and You
+        DOGNET TECHNOLOGIES
     </NavLink>
         <div className="navbar">
             <MenuButton buttonProps={{}} to="/f">404 Not Found</MenuButton>
