@@ -15,7 +15,7 @@ header {
     padding: 0.5rem 1rem;
     display: flex;
     vertical-align: center;
-    justify-content: start;
+    justify-content: space-between;
     align-items: stretch;
     text-align: left;
     gap: 1rem;
@@ -46,7 +46,12 @@ header * {
 .navbar {
     gap: 1rem;
     display: flex;
-    margin-left: auto;
+    /* margin-left: auto; */
+    align-items: center;
+}
+.miniNavBarGroup {
+    gap: 0.5rem;
+    display: flex;
     align-items: center;
 }
 .noLink {
@@ -87,6 +92,9 @@ header * {
 .blogCard > img {
     width: 300px;
     height: auto;
+}
+.standardText {
+    color: var(--contrast-colour);
 }
 .blogCard {
     background-color: var(--contrast-colour);

@@ -11,7 +11,7 @@ export interface MyAppContext {
 }
 export const AppContext = React.createContext<MyAppContext | undefined>(undefined);
 export function App() {
-    // const [navString, setNavString] = useState<string>({});
+    // const [isPageNotFound, setIsPageNotFound] = useState<boolean>(false);
     
     return <AppContext.Provider value={{
         }}>            
@@ -23,7 +23,8 @@ export function App() {
                     <Route path="/" element={<Home/>} />
                     <Route path="/blogs/arpanet" element={<ArpanetPage/>} />
                     <Route path="/blogs" element={<Blogs/>} />
-                    <Route path="*" element={<NotFound />} />
+                    <Route path="/404_not_found" element={<NotFound />}/>
+                    <Route path="*" element={<Navigate to="/404_not_found"/>} />
                 </Routes>
             </BrowserRouter>
         </AppContext.Provider>
