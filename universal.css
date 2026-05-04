@@ -1,15 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root {
     --accent-colour: rgb(167, 15, 15);
+    --opposite-accent-colour: rgb(221, 95, 95);
+    --standard-colour: rgb(0, 0, 0);
+    --contrast-colour: rgb(255, 255, 255);
 }
 header {
-    background: var(--accent-colour);
+    background-color: var(--accent-colour);
+    padding: 0.5rem 1rem;
 }
 header .heading_logo {
-    color: #ffffff;
+    color: var(--contrast-colour);
 }
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    color: var(--standard-colour);
+    font-family: 'Rubik';
+}
+main {
+    padding: 0.5rem 1rem;
+}
+.unique_stripe {
+    background-color: var(--opposite-accent-colour);
+}
+h1 {
+    margin: 0;
+    padding: 1rem 1rem;
 }
