@@ -19,19 +19,18 @@ export function StandardMenuButton({children, to, ...props}: MenuButtonProps) {
 }
 export function HamburgerMenuButton({onClick = () => {}}: {onClick?: (toggled: boolean) => void}) {
     const [toggled, setToggled] = useState(false);
-    return <button className="HamburgButton" onClick={() => {setToggled(!toggled); onClick(toggled)}}>
-                <i className="hamburger fa-solid fa-bars"></i>
+    return <button className="HamburgButton" onClick={() => {setToggled(!toggled); onClick(!toggled)}}>
+                { toggled ? <i className="hamburger fa-solid fa-close"></i> : <i className="hamburger fa-solid fa-bars"></i> }
             </button>
 }
-export function MenuBar() {
+export function MenuBar({toggleMiniNav}: {toggleMiniNav: (toggled: boolean) => void}) {
     return <header>
         <Logo/>
         <div className="navbar toggle_desktop">
             <div className="miniNavBarGroup">
                 <DividerBar dividerObject={<span className="thinDivider"/>}>
-                    <StandardMenuButton to="/featured_blogs">Featured Blogs</StandardMenuButton>
-                    {/* <StandardMenuButton to="https://kidshelpline.com.au/">Fix Your Life</StandardMenuButton> */}
-                    <StandardMenuButton to="/blogs">Blogs</StandardMenuButton>
+                    <StandardMenuButton to="/featured_definitions">Featured Definitions</StandardMenuButton>
+                    <StandardMenuButton to="/definitions">Definitions</StandardMenuButton>
                 </DividerBar>
             </div>
             <div className="miniNavBarGroup">
@@ -41,11 +40,11 @@ export function MenuBar() {
         </div>
         <div className="toggle_small_screen miniNavBarGroup">
             <MenuButton to="/login">Login</MenuButton>
-            <HamburgerMenuButton/>
+            <HamburgerMenuButton onClick={(toggled: boolean) => {toggleMiniNav(toggled)}}/>
         </div>
     </header>
 }
-export function MenuNavLinkDisplay() {
+export function MenuNavLinkDisplay({className, ...props}: {className: string} & React.ComponentProps<"div">) {
     const appContext = useContext(AppContext);
     const location = useLocation();
     const pathname = location.pathname.trim();
@@ -57,7 +56,7 @@ export function MenuNavLinkDisplay() {
     // return <>{ resourceStringMap[location.pathname] ? <div className="navigation">
     //         {resourceStringMap[location.pathname] ?? "Unknown Page"}
     //     </div> : <></>}</>
-    return <div className="navigation">{PathnameSplit.flatMap((thisPlace: string, index: number) => {
+    return <div {...props} className={`navigation ${className}`}>{PathnameSplit.flatMap((thisPlace: string, index: number) => {
         const thisArray = [];
         if (index > 0) {
             thisArray.push(<p className="light" key={index * 2}>/</p>);

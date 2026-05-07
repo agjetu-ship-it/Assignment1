@@ -6,14 +6,14 @@ export function FeaturedBlogs() {
                    {
             title: "What is Network Bandwidth",
             description: "Understand the throttle of your network — Why your internet can feel slow at times",
-            linkTo: "/blogs/whatisnetworkbandwidth",
+            linkTo: "/definitions/whatisnetworkbandwidth",
             image: "https://micronovaimpex.com/wp-content/uploads/2021/02/Ethernet-cabls.png",
             minutesToRead: 2
        },
             {
                 title: "Deleted Blog",
                 description: "This blog is deleted.",
-                linkTo: "/blogs/howdoesthetheoryofrelativityrelatetothetheoryofquagerstein",
+                linkTo: "/definitions/howdoesthetheoryofrelativityrelatetothetheoryofquagerstein",
                 image: "<main>",
                 minutesToRead: 0.5
         }

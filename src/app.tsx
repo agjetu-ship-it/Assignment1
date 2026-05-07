@@ -20,6 +20,7 @@ import { ASCII } from "./pages/ascii.js";
 import { Scroller } from "./scroller.js";
 import { UnitsOfStorage } from "./pages/unitsOfStorage.js";
 import { WhatIsCloudBasedStorage } from "./pages/cloudBasedStorage.js";
+import { MenuOfLinks } from "./menuOfLinks.js";
 export const AppContext = React.createContext<MyAppContext | undefined>(undefined);
 export function App() {
     // const [isPageNotFound, setIsPageNotFound] = useState<boolean>(false);
@@ -27,79 +28,85 @@ export function App() {
         {
             title: "The First Computer Network",
             description: "ARPANET reveals its presence before the World Wide Web.",
-            linkTo: "/blogs/arpanet",
+            linkTo: "/definitions/arpanet",
             image: "https://pbs.twimg.com/media/GEjAfOeaAAIiShk.jpg",
             minutesToRead: 1
        },
        {
             title: "What is a Decimal?",
             description: "Explore what a decimal is.",
-            linkTo: "/blogs/decimal",
+            linkTo: "/definitions/decimal",
             image: "https://thumbs.dreamstime.com/b/serious-self-employed-working-consulting-paper-agenda-home-445069973.jpg",
             minutesToRead: 1
        },
        {
             title: "What is Network Bandwidth",
             description: "Understand the throttle of your network — Why your internet can feel slow at times",
-            linkTo: "/blogs/whatisnetworkbandwidth",
+            linkTo: "/definitions/whatisnetworkbandwidth",
             image: "https://micronovaimpex.com/wp-content/uploads/2021/02/Ethernet-cabls.png",
             minutesToRead: 2
        },
         {
             title: "Deleted Blog",
             description: "This blog is deleted. (working 404 page)",
-            linkTo: "/blogs/howdoesthetheoryofrelativityrelatetothetheoryofquagerstein",
+            linkTo: "/definitions/howdoesthetheoryofrelativityrelatetothetheoryofquagerstein",
             image: "<main>",
             minutesToRead: 0.5
        },
         {
             title: "What is a \"Binary\"?",
             description: "Explore the cryptic systems of ones and zeros.",
-            linkTo: "/blogs/binary",
+            linkTo: "/definitions/binary",
             image: "https://static0.srcdn.com/wordpress/wp-content/uploads/2017/10/Keanu-Reeves-The-Matrix-Code.jpg",
             minutesToRead: 10
        },
         {
             title: "The Encoding System of ASCII",
             description: "The standard text communication protocol invented by the americans.",
-            linkTo: "/blogs/ascii",
+            linkTo: "/definitions/ascii",
             image: "https://cdn.britannica.com/76/4476-050-E643DD49/Betsy-Ross-legend-flag-united-states.jpg",
             minutesToRead: 2
        },
         {
             title: "Units of Storage",
             description: "Understand the scale of your computer storage.",
-            linkTo: "/blogs/unitsofstorage",
+            linkTo: "/definitions/unitsofstorage",
             image: "https://sm.pcmag.com/pcmag_au/how-to/h/how-to-cop/how-to-copy-your-windows-installation-to-an-ssd_bzyt.jpg",
             minutesToRead: 1
        },
         {
             title: "Cloud Based Storage",
             description: "Dive into what Cloud Based Storage means",
-            linkTo: "/blogs/cloudbasedstorage",
+            linkTo: "/definitions/cloudbasedstorage",
             image: "https://sm.pcmag.com/pcmag_au/how-to/h/how-to-cop/how-to-copy-your-windows-installation-to-an-ssd_bzyt.jpg",
             minutesToRead: 1
        }
     ]);
+    const [miniNavOpen, setMiniNavOpen] = useState<boolean>(false);
     return <AppContext.Provider value={{
         }}>            
             <HashRouter>
-                <MenuBar/>
-                <MenuNavLinkDisplay/>
+                <MenuBar toggleMiniNav={(toggled: boolean) => {
+                    setMiniNavOpen(toggled);
+                }}/>
+                <div className="toggle_desktop">
+                <MenuNavLinkDisplay className="toggle_desktop"/>
+                </div>
+                {miniNavOpen ? <MenuOfLinks/> : <MenuNavLinkDisplay className="toggle_small_screen"/>}
                 <Scroller/>
                 <main>
                 <Routes>
                     {/* <Route path="/" element={<Navigate to="/home" replace />} /> */}
                         <Route path="/" element={<Home/>} />
-                        <Route path="/blogs/arpanet" element={<ArpanetPage/>} />
-                        <Route path="/blogs/whatisnetworkbandwidth" element={<WhatIsNetworkBandwidth/>} />
-                        <Route path="/blogs/decimal" element={<DecimalPage/>} />
-                        <Route path="/blogs/binary" element={<Binary/>} />
-                        <Route path="/blogs/ascii" element={<ASCII/>} />
-                        <Route path="/blogs/unitsofstorage" element={<UnitsOfStorage/>} />
-                        <Route path="/blogs/cloudbasedstorage" element={<WhatIsCloudBasedStorage/>} />
-                        <Route path="/blogs" element={<Blogs blogs={blogs}/>} />
-                        <Route path="/featured_blogs" element={<FeaturedBlogs/>} />
+                        <Route path="/definitions/arpanet" element={<ArpanetPage/>} />
+                        <Route path="/definitions/whatisnetworkbandwidth" element={<WhatIsNetworkBandwidth/>} />
+                        <Route path="/definitions/decimal" element={<DecimalPage/>} />
+                        <Route path="/definitions/binary" element={<Binary/>} />
+                        <Route path="/definitions/ascii" element={<ASCII/>} />
+                        <Route path="/definitions/unitsofstorage" element={<UnitsOfStorage/>} />
+                        <Route path="/definitions/cloudbasedstorage" element={<WhatIsCloudBasedStorage/>} />
+                        <Route path="/definitions" element={<Blogs blogs={blogs}/>} />
+                        <Route path="/featured_definitions" element={<FeaturedBlogs/>} />
                         <Route path="/login" element={<Login/>} />
                         <Route path="/signup" element={<Signup/>} />
                         <Route path="*" element={<NotFound />}/>

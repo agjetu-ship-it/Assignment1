@@ -145,6 +145,17 @@ code {
     padding: 1rem;
     text-align: left;
 }
+.menuOfLinks {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--opposite-accent-colour);
+    padding: 0.5rem 1rem;
+    /* gap: 1rem; */
+}
+.menuOfLinks a {
+    padding: 0.5rem 0rem;
+}
 .full-viewport {
     align-self: stretch;
     width: 100%;
