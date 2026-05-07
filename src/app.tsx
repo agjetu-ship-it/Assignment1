@@ -21,6 +21,7 @@ import { Scroller } from "./scroller.js";
 import { UnitsOfStorage } from "./pages/unitsOfStorage.js";
 import { WhatIsCloudBasedStorage } from "./pages/cloudBasedStorage.js";
 import { MenuOfLinks } from "./menuOfLinks.js";
+import { WhatIsInformation } from "./pages/whatIsInformation.js";
 export const AppContext = React.createContext<MyAppContext | undefined>(undefined);
 export function App() {
     // const [isPageNotFound, setIsPageNotFound] = useState<boolean>(false);
@@ -47,13 +48,6 @@ export function App() {
             minutesToRead: 2
        },
         {
-            title: "Deleted Blog",
-            description: "This blog is deleted. (working 404 page)",
-            linkTo: "/definitions/howdoesthetheoryofrelativityrelatetothetheoryofquagerstein",
-            image: "<main>",
-            minutesToRead: 0.5
-       },
-        {
             title: "What is a \"Binary\"?",
             description: "Explore the cryptic systems of ones and zeros.",
             linkTo: "/definitions/binary",
@@ -78,7 +72,14 @@ export function App() {
             title: "Cloud Based Storage",
             description: "Dive into what Cloud Based Storage means",
             linkTo: "/definitions/cloudbasedstorage",
-            image: "https://sm.pcmag.com/pcmag_au/how-to/h/how-to-cop/how-to-copy-your-windows-installation-to-an-ssd_bzyt.jpg",
+            image: "https://static-cdn.techvify.com/strapi-uploads/uploads/online_data_storage_services_c353b2cace.webp",
+            minutesToRead: 1
+       },
+        {
+            title: "Data versus Information",
+            description: "The two are often used interchangeably. They're not the same.",
+            linkTo: "/definitions/datavsinformation",
+            image: "https://media.istockphoto.com/id/1388645967/photo/pensive-thoughtful-contemplating-caucasian-young-man-thinking-about-future-planning-new.jpg?s=612x612&w=0&k=20&c=Keax_Or9RivnYV_9VoOLjknWQP8iaxYXc4jS9rwBmcc=",
             minutesToRead: 1
        }
     ]);
@@ -103,6 +104,7 @@ export function App() {
                         <Route path="/definitions/decimal" element={<DecimalPage/>} />
                         <Route path="/definitions/binary" element={<Binary/>} />
                         <Route path="/definitions/ascii" element={<ASCII/>} />
+                        <Route path="/definitions/datavsinformation" element={<WhatIsInformation/>} />
                         <Route path="/definitions/unitsofstorage" element={<UnitsOfStorage/>} />
                         <Route path="/definitions/cloudbasedstorage" element={<WhatIsCloudBasedStorage/>} />
                         <Route path="/definitions" element={<Blogs blogs={blogs}/>} />
@@ -113,6 +115,9 @@ export function App() {
                         {/* <Route path="*" element={<Navigate to="/404_not_found" replace={false} state/>} /> */}
                 </Routes>
                 </main>
+                <footer>
+                    <p>2026</p>
+                </footer>
             </HashRouter>
         </AppContext.Provider>
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Blogs } from "./blogs.js";
 export function FeaturedBlogs() {
     return <>
+        <h1>Featured Definitions</h1>
         <Blogs blogs={[
                    {
             title: "What is Network Bandwidth",
@@ -9,14 +10,7 @@ export function FeaturedBlogs() {
             linkTo: "/definitions/whatisnetworkbandwidth",
             image: "https://micronovaimpex.com/wp-content/uploads/2021/02/Ethernet-cabls.png",
             minutesToRead: 2
-       },
-            {
-                title: "Deleted Blog",
-                description: "This blog is deleted.",
-                linkTo: "/definitions/howdoesthetheoryofrelativityrelatetothetheoryofquagerstein",
-                image: "<main>",
-                minutesToRead: 0.5
-        }
+       }
         ]}></Blogs>
     </>
 }
