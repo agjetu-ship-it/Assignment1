@@ -15,7 +15,7 @@ export function Binary() {
         </p>
         <p>
             A misconception people usually make is that binary can be directly decoded to text.
-            This is not the case, binary is simply a number format. Instead, the people are referring probably referring to text lookup tables like ASCII that allows you to convert a number to a character. Chain this, and you can make a sentence just from numbers!
+            This is not the case, binary is simply a number format. Instead, the people are referring probably referring to text lookup tables like ASCII that allows you to convert a number to a character. Chain this process, and you can make a sentence from numbers.
         </p>
         <p>
             Note: This article is referring to the original ASCII.
@@ -39,7 +39,7 @@ export function Binary() {
                 <th>Bit 4</th>
                 <th>Bit 5</th>
                 <th>Bit 6</th>
-                <th>Bit 7 💀</th>
+                <th>Bit 7</th>
                 <th>Total</th>
             </tr>
             </thead>
@@ -73,7 +73,7 @@ export function Binary() {
                 <th>Bit 4 (OFF)</th>
                 <th>Bit 5 (ON)</th>
                 <th>Bit 6 (OFF)</th>
-                <th>Bit 7 💀 (ON)</th>
+                <th>Bit 7 (ON)</th>
                 <th>Total</th>
             </tr>
             </thead>
@@ -92,7 +92,7 @@ export function Binary() {
             </tbody>
         </table>
         <p>32 + 4 + 1 = 37.</p>
-        <p>Let's look that up in our lookup table at <NavLink to="/blogs/ascii">
+        <p>Look that up in the lookup table at <NavLink to="/blogs/ascii">
         the encoding system of ascii
         </NavLink></p>
         <strong>Question: What is the number <code>37</code> in the ASCII table?</strong>

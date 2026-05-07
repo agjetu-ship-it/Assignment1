@@ -19,6 +19,7 @@ import { Binary } from "./pages/binary.js";
 import { ASCII } from "./pages/ascii.js";
 import { Scroller } from "./scroller.js";
 import { UnitsOfStorage } from "./pages/unitsOfStorage.js";
+import { WhatIsCloudBasedStorage } from "./pages/cloudBasedStorage.js";
 export const AppContext = React.createContext<MyAppContext | undefined>(undefined);
 export function App() {
     // const [isPageNotFound, setIsPageNotFound] = useState<boolean>(false);
@@ -28,7 +29,7 @@ export function App() {
             description: "ARPANET reveals its presence before the World Wide Web.",
             linkTo: "/blogs/arpanet",
             image: "https://pbs.twimg.com/media/GEjAfOeaAAIiShk.jpg",
-            minutesToRead: 15
+            minutesToRead: 1
        },
        {
             title: "What is a Decimal?",
@@ -39,7 +40,7 @@ export function App() {
        },
        {
             title: "What is Network Bandwidth",
-            description: "Your network actually has a limiting speed - Which is why your Google feels so slow on PremiumX wifi as opposed to using Woolworths Everyday.",
+            description: "Understand the throttle of your network — Why your internet can feel slow at times",
             linkTo: "/blogs/whatisnetworkbandwidth",
             image: "https://micronovaimpex.com/wp-content/uploads/2021/02/Ethernet-cabls.png",
             minutesToRead: 2
@@ -64,6 +65,20 @@ export function App() {
             linkTo: "/blogs/ascii",
             image: "https://cdn.britannica.com/76/4476-050-E643DD49/Betsy-Ross-legend-flag-united-states.jpg",
             minutesToRead: 2
+       },
+        {
+            title: "Units of Storage",
+            description: "Understand the scale of your computer storage.",
+            linkTo: "/blogs/unitsofstorage",
+            image: "https://sm.pcmag.com/pcmag_au/how-to/h/how-to-cop/how-to-copy-your-windows-installation-to-an-ssd_bzyt.jpg",
+            minutesToRead: 1
+       },
+        {
+            title: "Cloud Based Storage",
+            description: "Dive into what Cloud Based Storage means",
+            linkTo: "/blogs/cloudbasedstorage",
+            image: "https://sm.pcmag.com/pcmag_au/how-to/h/how-to-cop/how-to-copy-your-windows-installation-to-an-ssd_bzyt.jpg",
+            minutesToRead: 1
        }
     ]);
     return <AppContext.Provider value={{
@@ -82,6 +97,7 @@ export function App() {
                         <Route path="/blogs/binary" element={<Binary/>} />
                         <Route path="/blogs/ascii" element={<ASCII/>} />
                         <Route path="/blogs/unitsofstorage" element={<UnitsOfStorage/>} />
+                        <Route path="/blogs/cloudbasedstorage" element={<WhatIsCloudBasedStorage/>} />
                         <Route path="/blogs" element={<Blogs blogs={blogs}/>} />
                         <Route path="/featured_blogs" element={<FeaturedBlogs/>} />
                         <Route path="/login" element={<Login/>} />
