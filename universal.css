@@ -135,6 +135,16 @@ code {
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
 }
+.scientificTable {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid var(--standard-button-outline);
+}
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
 .full-viewport {
     align-self: stretch;
     width: 100%;

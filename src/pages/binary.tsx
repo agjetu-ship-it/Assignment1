@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export function Binary() {
     return <>
         <h1>What is Binary</h1>
@@ -10,7 +12,49 @@ export function Binary() {
         </p>
         <p>
             A misconception people usually make is that binary can be directly decoded to text.
-            This is not the case, binary is simply a number format. Instead, the people are referring to a system called ASCII that allows you to convert numbers from 0-255 to a character (32-127 is the range of readable/english characters, the rest are for formatting). Chain this, and you can make a sentence from numbers!
+            This is not the case, binary is simply a number format. Instead, the people are referring probably referring to text lookup tables like ASCII that allows you to convert a number to a character. Chain this, and you can make a sentence just from numbers!
+            
+            Note: This article is referring to Extended ASCII — A version later made to use the full 8 bits, to allow things like special symbols.
+
+            The original ASCII only had 7 bits (128 characters).
         </p>
+        <NavLink to="/blogs/ascii">
+        click here to know about ASCII
+        </NavLink>
+        <p>In a binary number, each bit is twice the value of the bit on the right of this bit. The first bit on the very right has a value of 1.</p>
+        <table className="scientificTable">
+            <tr>
+                <th>Bit 0</th>
+                <th>Bit 1</th>
+                <th>Bit 2</th>
+                <th>Bit 3</th>
+                <th>Bit 4</th>
+                <th>Bit 5</th>
+                <th>Bit 6</th>
+                <th>Bit 7 💀</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>128</td>
+                <td>64</td>
+                <td>32</td>
+                <td>16</td>
+                <td>8</td>
+                <td>4</td>
+                <td>2</td>
+                <td>1</td>
+                <td>255</td>
+            </tr>
+        </table>
+        <p>
+            When a bit is flipped on, that bit's value gets added to the total.
+            Let's take a look at an example.
+        </p>
+        <code>00100101</code>
+        <p>
+            Technically, a binary number doesn't HAVE to be 8 digits to be a valid number.
+            But ASCII was created to represent a character in a single
+        </p>
+
     </>;
 }

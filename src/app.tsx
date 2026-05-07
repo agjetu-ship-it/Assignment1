@@ -16,6 +16,7 @@ import type { BlogType, Blog } from "./pages/blogs.js";
 import { Login } from "./pages/login.js";
 import { Signup } from "./pages/signup.js";
 import { Binary } from "./pages/binary.js";
+import { ASCII } from "./pages/ascii.js";
 export const AppContext = React.createContext<MyAppContext | undefined>(undefined);
 export function App() {
     // const [isPageNotFound, setIsPageNotFound] = useState<boolean>(false);
@@ -62,6 +63,7 @@ export function App() {
                         <Route path="/blogs/whatisnetworkbandwidth" element={<WhatIsNetworkBandwidth/>} />
                         <Route path="/blogs/decimal" element={<DecimalPage/>} />
                         <Route path="/blogs/binary" element={<Binary/>} />
+                        <Route path="/blogs/ascii" element={<ASCII/>} />
                         <Route path="/blogs" element={<Blogs blogs={blogs}/>} />
                         <Route path="/featured_blogs" element={<FeaturedBlogs/>} />
                         <Route path="/login" element={<Login/>} />
