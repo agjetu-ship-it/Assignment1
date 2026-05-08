@@ -15,7 +15,7 @@
 }
 header {
     /* background-color: var(--accent-colour); */
-    background: linear-gradient(var(--accent-colour), var(--brightest-accent-colour));
+    background: linear-gradient(rgb(235, 156, 156) 0%, var(--brightest-accent-colour) 25%, var(--accent-colour) 50%, rgb(137, 21, 21) 51%, var(--accent-colour) 100%);
     padding: 0.5rem 1rem;
     display: flex;
     vertical-align: center;
