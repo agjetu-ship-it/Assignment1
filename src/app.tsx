@@ -195,9 +195,12 @@ export function App() {
                 </Routes>
                 </main>
                 <footer>
-                    <LogoFull/>
+                    <div className="flexSide centerDog">
+                         <LogoFull className={"grayscale"}/>
+                         <p className="ghost">Exploring how the web, computers and your hardware works. One definition at a time.</p>
+                    </div>
                     <p>Copyright 2026 Daniel, and Ethan. Licensed under the Apache License, Version 2.0</p>
                 </footer>
             </HashRouter>
         </AppContext.Provider>
-}
+}    

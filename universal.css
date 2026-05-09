@@ -35,7 +35,19 @@ footer {
     pointer-events: none;
     padding: 1rem;
     font-size: 1rem;
-    background-color: grey;
+    gap: 1rem;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    background-color: var(--standard-button-outline);
+}
+.centerDog {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.grayscale {
+    filter: grayscale()
 }
 footer p {
     color: var(--contrast-colour);
