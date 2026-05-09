@@ -27,6 +27,7 @@ import { InternetOfMe } from "./pages/internetOfMe.js";
 import { WhatIsASocialNetwork } from "./pages/socialNetwork.js";
 import { WhatIsAnEntity } from "./pages/entity.js";
 import { WhatIsARelationship } from "./pages/relationship.js";
+import { Sociogram } from "./pages/sociogram.js";
 export const AppContext = React.createContext<MyAppContext | undefined>(undefined);
 export function App() {
     // const [isPageNotFound, setIsPageNotFound] = useState<boolean>(false);
@@ -98,11 +99,11 @@ export function App() {
             title: "Social Networks",
             description: "Understand connections between you and others",
             linkTo: "/definitions/socialnetworks",
-            image: "https://i.imgflip.com/1jqcf8.jpg?a493776",
+            image: "https://tco.am/blog/wp-content/uploads/2017/12/socialnetworking.jpg",
             minutesToRead: 1
        },
        {
-            title: "Online, you are an entity.",
+            title: "Entities.",
             description: "Explore what it means to be a thing online, with a digital prescence.",
             linkTo: "/definitions/entity",
             image: "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24805888/STK160_X_Twitter_006.jpg?quality=90&strip=all&crop=0%2C0.0083291687489577%2C100%2C99.983341662502&w=2400",
@@ -110,9 +111,16 @@ export function App() {
        },
        {
             title: "Relationships",
-            description: "You are connected to one another. See the glue between.",
+            description: "",
             linkTo: "/definitions/relationship",
             image: "https://miro.medium.com/v2/resize:fit:1400/0*pXXo6ATmarrxUkVh",
+            minutesToRead: 1
+       },
+       {
+            title: "Sociogram",
+            description: "A graphic representation of a group.",
+            linkTo: "/definitions/sociogram",
+            image: "https://thumbs.dreamstime.com/b/two-d-man-joining-together-puzzle-pieces-render-35185862.jpg",
             minutesToRead: 1
        }
     ]);
@@ -146,6 +154,7 @@ export function App() {
                         <Route path="/definitions/socialnetworks" element={<WhatIsASocialNetwork/>} />
                         <Route path="/definitions/relationship" element={<WhatIsARelationship/>} />
                         <Route path="/definitions/entity" element={<WhatIsAnEntity/>} />
+                        <Route path="/definitions/sociogram" element={<Sociogram/>} />
                         <Route path="/definitions" element={<BlogsPage blogs={blogs}/>} />
                         <Route path="/featured_definitions" element={<FeaturedBlogs/>} />
                         <Route path="/login" element={<Login/>} />

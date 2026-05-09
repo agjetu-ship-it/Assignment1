@@ -7,7 +7,7 @@ export function Binary() {
     return <>
         <h1>What is Binary</h1>
         <p>
-            In the movies, you hear it as this magical computing language that people modify directly to gain access to the mainframe. You look at binary at the first time and see "10101010101" (not an accurate representation), you say WOW!
+            In the movies, you hear it as this magical computing language that people modify directly to gain access to the mainframe.
         </p>
         <p>
             But, binary is actually just another name for base-2. Binary uses two states [ON, OFF] to store data.

@@ -28,6 +28,15 @@ export function InternetOfMe() {
             <li>Another tool that allows you to bypass the bad side of the Internet of Me is using ad blockers/tracking blockers like uBlock origin. These stop trackers from running, and they prevent data being sent to the harvesting server for personalised advertisements.</li>
             <li>You can use services like DeleteMe to send legal notices to Data Brokers emphatically demending they delete your profile. Although this service is paid, it does offer a nice benefit for privacy oriented users.</li>
         </ul>
+        <p>
+            On social media content consumption platforms like YouTube or TikTok - Internet of Me is used to maximise engagement by studying what you watch, personalising your feed. These platforms are designed as addiction machines that leverage your emotions to keep you enagaged.
+        </p>
+        <p>
+            While they offer personalised experiences, because of how the algorithm promotes content - over time, it leads to more extremist, fast paced, controversial content that leads the boundaries of what content is because it generates higher enagement. This leads to teh mass spread of dangerous challenges such as the "tide pod challenge", or misinformation.
+        </p>
+        <p>
+            Prolonged exposure to algorithmic feeds, can cause anxiety, depression, withdrawal symptoms, the need to "stay updated".
+        </p>
         <p>A significant offender of Internet of Me is LinkedIn, which engages in behaviours people criticise for being invasive. LinkedIn is the largest professional network on the internet. You can use LinkedIn to find jobs, internship, connect and strengthen professional relationships. It operates with you having a profile employers can look at and hire you. You can set your profile to Open to Work. But, LinkedIn uses a system where all your browser extensions are sent to their servers. In 2024, LinkedIn added an AI feature you will need to opt out of manually. It trains on what you do within the service. LinkedIn also tracks all actions you do on their site. It tracks your messages, your hardware information, your CPU core count, RAM usage, the list goes on.</p>
         <p>As of 2026, BrowserGate has ongoing investigations with LinkedIn — The most popular professional job listing website since 2003.</p>
         <h2>Internet of Things</h2>

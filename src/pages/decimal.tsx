@@ -10,6 +10,12 @@ export function DecimalPage() {
         <p>
             In a decimal, each number is 10th to the power of what is on the right.
         </p>
+        <p>
+            Historically, humans have adopted base-10 over other options because we have 10 fingers, and it provided a convenient way for earlier counting.
+        </p>
+        <p>
+            Today, even we could change to other base systems, but we don't because our modern society is deeply integrated into this form of counting and our culture has influenced us to use this system further.
+        </p>
         <table>
             <thead>
                 <tr>
