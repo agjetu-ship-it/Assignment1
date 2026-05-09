@@ -41,6 +41,9 @@ footer {
     flex-direction: column;
     background-color: var(--standard-button-outline);
 }
+.dnsGraph {
+    background-color: rgb(91, 91, 71);
+}
 .centerDog {
     display: flex;
     gap: 0.5rem;

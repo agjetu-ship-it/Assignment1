@@ -27,5 +27,27 @@ export function Hardware() {
             Routers store a table of addresses/IPs to route data to. When it receives a packet, it will read where the device intended to send the packet, then read the table to figure out the most optimal path. It forwards the packet to the next network in the path.
         </p>
         <img className="behaveImage" src="https://cdn.shopify.com/s/files/1/0613/4041/8306/files/LO-Connection_of_networks_through_Router.png?v=1659944198" alt="A diagram of routers connected to switches connected to computers"/>
+        <p>
+            A switch connects to devices within a network and forwards data packets only to those intended devices. Frequently used in offices, they connect their router to the switch. This allows the router to reduce stress by managing less devices
+        </p>
+        <p>
+            WAP (Wireless Access Point) receives signals from wireless devices to forward them to a wired router.
+            It acts as a bridge that connects a router without a wireless capability to accept wireless requests.
+        </p>
+        <p>
+            A wireless access point receives signals the same as how a router receives it, but it has wireless capability and acts as a wireless extension for the router.
+        </p>
+        <p>
+            Devices connected to WAPs think it is the actual router itself.
+            The router thinks the WAP is a device and is just greedy and makes lots of network requests, but it is actually a connection point that acts as a router to the devices connected to the WAP, while the wired router thinks the WAP is a device.
+        </p>
+        <div className="flexSide">
+        <img className="behaveImage dnsGraph" src="https://raw.githubusercontent.com/DOGNET-SUPERB-TECHNOLOGIES/cdn/main/dnsGraph.png" alt="A diagram of a device requesting the WAP to request to the router the IP address for google.com" width="500px" height="500px"/>
+        <img className="behaveImage" src="https://raw.githubusercontent.com/DOGNET-SUPERB-TECHNOLOGIES/cdn/main/TheFlow.png" alt="A diagram of network requests passing through a WAP, a device and a router" width="500px" height="500px"/>
+        </div>
+        <p>
+            A server is the backend of a service that manages all the data, and acts as a source of truth for everyone. It allows clients to connect to it, performs necessary actions like authentication and returns a response.
+        </p>
+        <img className="behaveImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCy9w4GF5MioEeHFHcQ0n0I4mjbsDhSgLpdQ&s" alt="Devices connected to a server diagram"/>
     </>
 }
