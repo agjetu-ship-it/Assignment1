@@ -21,11 +21,16 @@ export function WiredTransmission() {
         </p>
         <div className="flexSide">
         <img className="behaveImage" src="https://www.firewall.cx/images/stories/cabling-utp-categories.png" alt="A table listing categories of UTP"/>
-        <img className="behaveImage" src="https://stl.tech/wp-content/uploads/2022/05/shutterstock_561553240.jpg" alt="A cable with an opening cutout and 4 twisted wires exiting from the opening. This is a UTP cable." width="700px" height="466px" />
+        <img className="behaveImage" src="https://stl.tech/wp-content/uploads/2022/05/shutterstock_561553240.jpg" alt="A cable with an opening cutout and 4 twisted wires exiting from the opening. This is a UTP cable." width="350px" height="233px" />
         </div>
         <h2>Copper Wires</h2>
+        <div className="flexSide">
+        <div className="flexNormal">
         <p>
-            A copper wire is a thin thread made of copper that allows information to pass through it by converting data into elecetric signals that are transmitted as encoded sequences of voltage pulses throughout the conductor to communicate to another electrical component.
+            A copper wire is a thin thread made of copper that allows information to pass through it by converting data into elecetric signals that are transmitted as encoded sequences of voltage pulses throughout the conductor to communicate to another electrical component. It is a highly durable and flexible material.
+        </p>
+        <p>
+            Copper wires are made of copper. Copper is a soft reddish metal that is recyclable, and one of the first metals used by humans. Copper corrodes through an electrochemical oxidation process when exposed to oxygen or moisture — forming a product appears green in appearance. Copper does not rust; it forms a protective film on the surface which gradually thickens until it forms copper carbonate. This material is called patina, serves as a protection layer that preserves the unspoiled copper inside.
         </p>
         <p>
             Copper wires are used heavily because copper is an exceptionally efficient conductor, and a lot more affordable than silver (though aluminium is cheaper). Copper has very low resistivity, meaning it demonstrates little resistance to the flow of electrical current.
@@ -36,5 +41,8 @@ export function WiredTransmission() {
         <p>
             In aviation, copper wires aren't used because they are dense and heavy. They might use lighter materials — for instance, power lines use aluminium instead. Copper wires can pick up electromagnetic interference that can corrupt data signals. Without boosters, copper loses signal strength significantly faster than fiber optic cables. Because of this, copper wires are commonly used in home wiring and electronics — while aluminium is used in long-distance telecommunications.
         </p>
+        </div>
+        <img className="behaveImage" src="https://image.made-in-china.com/202f0j00mPwUtQiaOoqp/PVC-Insulated-Copper-for-Building-Wire.webp" alt="Copper wires shielded by plastic"/>
+        </div>
     </>
 }
