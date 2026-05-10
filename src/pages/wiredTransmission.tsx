@@ -51,11 +51,24 @@ export function WiredTransmission() {
             The data is transmitted using an alternating current through the central copper core.
         </p>
         <img className="behaveImage" src="https://rasantekaudio.com/wp-content/uploads/2024/11/Coaxial-Cable-Construction.webp" alt="A coaxial cable's components being dissected with an opening in the front of the cable, a braided copper shield, a foil shield inside the copper shield, a dielectric and center conductor."/>
+        <h2>
+            Fibre Optic Cables
+        </h2>
         <p>
             Fibre optic transmits information via light through thin glass or plastic strands. It prevents signal loss and electromagnetic interference with its internal reflection properties and because it is transmitting with light
         </p>
         <p>
             These are designed for high-<NavLink to="https://en.wikipedia.org/wiki/Speed">speed</NavLink>, high-<NavLink to="/definitions/whatisnetworkbandwidth">bandwidth</NavLink>
         </p>
+        <p>
+            Single mode fibre optic is designed to carry a single ray of light through a narrow core. It is typically 10 microns in diameter, it eliminates modal dispersion — a phenomenon where order is not guarantueed, and at long distances can significantly influence the result because of different light paths travelling at different speeds. This enables reliable transmission of data across large distances like 140km.
+        </p>
+        <p>
+            Multi mode fibre optic is designed to carry multiple rays of light in multiple wires. This can be unreliable across long distances — the more distance, the more time is given for the light to diverge more at various speeds. They're more commonly used in small, local areas where divergence isn't a concern due to the short distance.
+        </p>
+        <div className="flexSide">
+            <img className="behaveImage" src="https://cdn.britannica.com/18/85418-004-BDAE4770/Light-ray-fibre.jpg" alt="An open fibre optic wire."/>
+            <img className="behaveImage" src="https://images.ctfassets.net/aoyx73g9h2pg/2akZ34C0SwKh3lRZg3u0M5/bbdbf30bbe3d7f6939a78d50df925a28/Single-Mode-vs-Multimode-Fiber-Diagram.jpg" alt="Single mode vs multi mode fibre optic."/>
+        </div>
     </>
 }
