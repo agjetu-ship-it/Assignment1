@@ -151,7 +151,7 @@ export function App() {
           minutesToRead: 3
      }, 
      {
-          title: "Wired Transmission",
+          title: "Wired Transmission & Transmission Media",
           description: "Connecting devices together for communication.",
           linkTo: "/definitions/wired_transmission",
           image: "https://studyopedia.com/wp-content/uploads/2017/08/Unshielded-Twisted-Pair-Cable.png",
