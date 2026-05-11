@@ -158,14 +158,14 @@ export function App() {
           description: "Connecting devices together for communication.",
           linkTo: "/definitions/wired_transmission",
           image: "https://raw.githubusercontent.com/DOGNET-SUPERB-TECHNOLOGIES/cdn/main/Unshielded-Twisted-Pair-Cable.png",
-          minutesToRead: 1
+          minutesToRead: 5
      },
      {
           title: "Topology",
           description: "The arrangement of your devices",
           linkTo: "/definitions/topology",
           image: "https://automationcommunity.com/wp-content/uploads/2023/01/Network-Topology-scaled-3.jpg",
-          minutesToRead: 5
+          minutesToRead: 1
      },
      {
           title: "LAN and WAN",

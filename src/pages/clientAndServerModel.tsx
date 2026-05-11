@@ -13,5 +13,6 @@ export function ClientAndServerModel() {
         <p>
             Server side means the data part—interacting with data, logging in with authentication.
         </p>
+        <img className="behaveImage" src="https://itrelease.com/wp-content/uploads/2021/04/What-is-client-server-network.jpg" alt="Multiple client devices connected to a central server diagram"/>
     </>
 }
