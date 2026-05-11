@@ -34,6 +34,7 @@ import { Cybersecurity } from "./pages/cybersecurity.js";
 import { Logo, LogoFull } from "./logo.js";
 import { useGlobalOverflow } from "./hooks/useDisplayToggle.js";
 import { WiredTransmission } from "./pages/wiredTransmission.js";
+import { Topology } from "./pages/topology.js";
 export const AppContext = React.createContext<MyAppContext | undefined>(undefined);
 export function App() {
     // const [isPageNotFound, setIsPageNotFound] = useState<boolean>(false);
@@ -156,6 +157,13 @@ export function App() {
           linkTo: "/definitions/wired_transmission",
           image: "https://raw.githubusercontent.com/DOGNET-SUPERB-TECHNOLOGIES/cdn/main/Unshielded-Twisted-Pair-Cable.png",
           minutesToRead: 1
+     },
+     {
+          title: "Topology",
+          description: "Understand how location works",
+          linkTo: "/definitions/topology",
+          image: "",
+          minutesToRead: 1
      }
     ]);
     const [miniNavOpen, setMiniNavOpen] = useState<boolean>(false);
@@ -196,6 +204,7 @@ export function App() {
                         <Route path="/definitions/cybersecurity" element={<Cybersecurity/>} />
                         <Route path="/definitions/digitalcitizenship" element={<DigitalCitizenship/>} />
                         <Route path="/definitions/wired_transmission" element={<WiredTransmission/>} />
+                        <Route path="/definitions/topology" element={<Topology/>} />
                         <Route path="/definitions" element={<BlogsPage blogs={blogs}/>} />
                         <Route path="/featured_definitions" element={<FeaturedBlogs/>} />
                         <Route path="/login" element={<Login/>} />
