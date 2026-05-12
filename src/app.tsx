@@ -39,6 +39,7 @@ import { LocalAreaNetworkAndWideAreaNetwork } from "./pages/localAreaNetworkAndW
 import { ClientAndServerModel } from "./pages/clientAndServerModel.js";
 import { CommunicationProtocols } from "./pages/communicationprotocol.js";
 import { Handshaking } from "./pages/handshaking.js";
+import { TransmissionControlProtocolSlashInternetProtocol } from "./pages/tcpip.js";
 export const AppContext = React.createContext<MyAppContext | undefined>(undefined);
 export function App() {
     // const [isPageNotFound, setIsPageNotFound] = useState<boolean>(false);
@@ -196,6 +197,13 @@ export function App() {
           linkTo: "/definitions/handshaking",
           image: "https://www.aristocracy.london/wp-content/uploads/2019/08/the-81-rules-of-handshake-etiquette.jpg",
           minutesToRead: 2
+     },
+     {
+          title: "TCP/IP",
+          description: "The way your website requests are established",
+          linkTo: "/definitions/transmissioncontrolprotocolandinternetprotocol",
+          image: "https://cdn.kastatic.org/ka-perseus-images/55020ff0c8a236c7bc95847d2a132ce4a60331f8.png",
+          minutesToRead: 5
      }
     ]);
     const [miniNavOpen, setMiniNavOpen] = useState<boolean>(false);
@@ -243,6 +251,7 @@ export function App() {
                         <Route path="/definitions/clientandservermodel" element={<ClientAndServerModel/>} />
                          <Route path="/definitions/communicationprotocols" element={<CommunicationProtocols/>} />
                          <Route path="/definitions/handshaking" element={<Handshaking/>} />
+                         <Route path="/definitions/transmissioncontrolprotocolandinternetprotocol" element={<TransmissionControlProtocolSlashInternetProtocol/>} />
                         <Route path="/definitions" element={<BlogsPage blogs={blogs}/>} />
                         <Route path="/featured_definitions" element={<FeaturedBlogs/>} />
                         <Route path="/login" element={<Login/>} />
