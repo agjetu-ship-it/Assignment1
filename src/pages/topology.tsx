@@ -57,5 +57,9 @@ export function Topology() {
             A navigation map in computing applications defines a visual representation of network components and connections. It highlights how nodes connect, and as Navigation in the name suggests—it describes the navigation between nodes—the routes.
             It allows IT technicians to easily get a glance of what the network looks like, and maintain infrastructures. It can help with identifying bottlenecks, fixing weird topology, adding redundancy for reliability, etc. 
         </p>
+        <p>
+            Navigation maps are often used in corporate offices, data centres, large websites, cloud computing to view the LAN structure of a network.
+        </p>
+        <img className="behaveImage" src="https://www.fortra.com/sites/default/files/im-wp-geek-guide-figure1.jpg" alt="A navigation map"/>
     </>
 }
