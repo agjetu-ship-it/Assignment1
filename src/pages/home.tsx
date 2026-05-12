@@ -34,6 +34,11 @@ export function Home() {
                 <TimelineYearCard yearDate="1995">
                     Netscape Navigator reached a 70% marketshare. Microsoft would soon release Internet Explorer.
                     Amazon, and eBay were launched.
+                    <p>JavaScript was introduced on December 4. It allowed for more reactive and interactive webpages. JavaScript was named that way to ride the hype of Java. It was created by Brendan Eich, where he wanted to embed the Scheme programming language in the web—a Lisp-like functional language—but, his managers insisted him to create a syntax similar to Java.</p>
+                    <p>Basically, it was made to confuse developers and regular people because of marketing.</p>
+                </TimelineYearCard>
+                <TimelineYearCard yearDate="1996">
+                    
                 </TimelineYearCard>
                 </div>
             </div>
