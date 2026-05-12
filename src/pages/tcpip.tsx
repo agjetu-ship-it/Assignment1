@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export function TransmissionControlProtocolSlashInternetProtocol() {
     return <>
         <h1>Transmission Control Protocol/Internet Protocol</h1>
@@ -5,7 +7,16 @@ export function TransmissionControlProtocolSlashInternetProtocol() {
             TCP/IP protocol is a collection of communication protocols used to connect network devices on a network.
         </p>
         <p>
-            The Internet Protocol is the address system of the internet with the purpose of delivering data to a target device based on an address. Internet Protocol addresses are managed by the Internet Assigned Numbers Authority (part of ICANN) which allocate mass amounts of IPs to five Regional Internet Registrie (Asia-Pacific, Europe-Middle East-Central Asia, Canada-USA, Latin America-Carribean, and Africa), then the regional internet registries distribute these to local registries like your Internet Service Provider.
+            TCP defines how your data is processed before and after sending it somewhere on the internet. TCP provides reliable, and ordered data delivery. UDP is a different protocol not to be confused—and sends data immediately, often ignoring order and prioritising speed for realtime applications.
+        </p>
+        <p>
+            TCP ensures data is received through processes like TCP <NavLink to="/definition/handshakes">handshakes</NavLink>.
+            TCP communicates with other side to ensure they are using the same technology and processes, and is the stack layer of which technologies are used.
+            TCP isn't fixed to a single definition—it uses those definitions and tries to coordinate everyone with them—but it still follows strict Request for Comments standards to ensure global compatibility and that you're not using some foreign unsupported technology like Dog Text Transfer Protocol instead of HTTPS.
+        </p>
+        <img className="behaveImage" src="https://www.techtarget.com/rms/onlineimages/tcp_ip_model_with_protocols_and_addresses-h_half_column_mobile.png" alt="The Transmission Control Protocol stack"/>
+        <p>
+            The Internet Protocol is the address system of the internet with the purpose of delivering data to a target device based on an address. Internet Protocol addresses are managed by the Internet Assigned Numbers Authority (part of ICANN) which allocate mass amounts of IPs to five Regional Internet Registries (Asia-Pacific, Europe-Middle East-Central Asia, Canada-USA, Latin America-Carribean, and Africa), then the regional internet registries distribute these to local registries like your Internet Service Provider.
         </p>
         <p>
             An Internet Protocol address is a unique identifier that is assigned to devices on a network (Can be public or private—the public ones are assigned by mass authorities, while private addresses are for use on your local network and you can't distinguish them from outside because they are the same address range with everyone's network.)
