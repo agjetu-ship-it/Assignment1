@@ -38,6 +38,7 @@ import { Topology } from "./pages/topology.js";
 import { LocalAreaNetworkAndWideAreaNetwork } from "./pages/localAreaNetworkAndWideAreaNetwork.js";
 import { ClientAndServerModel } from "./pages/clientAndServerModel.js";
 import { CommunicationProtocols } from "./pages/communicationprotocol.js";
+import { Handshaking } from "./pages/handshaking.js";
 export const AppContext = React.createContext<MyAppContext | undefined>(undefined);
 export function App() {
     // const [isPageNotFound, setIsPageNotFound] = useState<boolean>(false);
@@ -188,6 +189,13 @@ export function App() {
           linkTo: "/definitions/communicationprotocols",
           image: "https://miro.medium.com/v2/1*KfPYDz61kR1_rd1woOoALg.png",
           minutesToRead: 1
+     },
+     {
+          title: "Handshaking",
+          description: "An elegant way of showing respect. Or actually, it is a redundancy system—this is how your network never loses data sent from the other side.",
+          linkTo: "/definitions/handshaking",
+          image: "https://www.aristocracy.london/wp-content/uploads/2019/08/the-81-rules-of-handshake-etiquette.jpg",
+          minutesToRead: 2
      }
     ]);
     const [miniNavOpen, setMiniNavOpen] = useState<boolean>(false);
@@ -234,6 +242,7 @@ export function App() {
                         <Route path="/definitions/lanandwan" element={<LocalAreaNetworkAndWideAreaNetwork/>} />
                         <Route path="/definitions/clientandservermodel" element={<ClientAndServerModel/>} />
                          <Route path="/definitions/communicationprotocols" element={<CommunicationProtocols/>} />
+                         <Route path="/definitions/handshaking" element={<Handshaking/>} />
                         <Route path="/definitions" element={<BlogsPage blogs={blogs}/>} />
                         <Route path="/featured_definitions" element={<FeaturedBlogs/>} />
                         <Route path="/login" element={<Login/>} />
