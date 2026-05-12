@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
+import { TimelineYearCard } from "../timelineYearCard.js";
 export function Home() {
     const beginningsOfInternet = useRef<HTMLHeadingElement | null>(null);
     return <div className="homeStripe">
@@ -18,12 +19,23 @@ export function Home() {
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Internet_map_1024_-_transparent%2C_inverted.png/330px-Internet_map_1024_-_transparent%2C_inverted.png"/>
                 <p className="ghost">an image of a portion of the internet connections [Source: <NavLink to="https://en.wikipedia.org/wiki/History_of_the_Internet">https://en.wikipedia.org/wiki/History_of_the_Internet</NavLink>]</p>
 
-                <p>In 1960, researchers developed packet switching networks. They aimed for data sharing, and communication that could survive attacks.</p>
-                <p>In 1969, ARPANET was the first packet switching network developed. It was funded by the US Defense Department, who linked computers at The University of California and Stanford</p>
-                <p>
-                    In 1993, the Mosaic browser was created.
-                </p>
-                <img src="https://media.wired.com/photos/59344b215321273fc0f91cd1/3:2/w_2560%2Cc_limit/mos-10.jpg"/>
+                <div className="timeline">
+                <TimelineYearCard yearDate="1960">Researchers developed packet switching networks. They aimed for data sharing, and communication that could survive attacks.</TimelineYearCard>
+                <TimelineYearCard yearDate="1965">Lawrence Roberts and Thomas Merril communicate with computers connected via a dial-up telephone in Massachusetts and California.</TimelineYearCard>
+                <TimelineYearCard yearDate="1969">ARPANET was the first packet switching network developed. It was funded by the US Defense Department, who linked computers at The University of California and Stanford</TimelineYearCard>
+                <TimelineYearCard yearDate="1970">Unix time was established—it served as a live counter from the epoch: 01/01/1970 at 00:00:00 UTC. This laid the backbone for things like authentication and synchronisation. The date was chosen for the convenience of the engineers.</TimelineYearCard>
+                <TimelineYearCard yearDate="1993">
+                    The Mosaic browser was created to make the World Wide Web accessible, user-friendly, and moving it beyond the text-only academic use.
+                <img src="https://media.wired.com/photos/59344b215321273fc0f91cd1/3:2/w_2560%2Cc_limit/mos-10.jpg" className="behaveImage" width="250px"/>
+                </TimelineYearCard>
+                <TimelineYearCard yearDate="1994">
+                    The Netscape browser was launched—and dominated the market from there.
+                </TimelineYearCard>
+                <TimelineYearCard yearDate="1995">
+                    Netscape Navigator reached a 70% marketshare. Microsoft would soon release Internet Explorer.
+                    Amazon, and eBay were launched.
+                </TimelineYearCard>
+                </div>
             </div>
         </div>
 }

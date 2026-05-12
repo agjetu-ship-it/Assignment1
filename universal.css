@@ -127,6 +127,31 @@ header {
     display: flex;
     gap: 0.5rem;
 }
+.timeline {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.timelineYearCard {
+    border: 1px solid var(--standard-button-outline);
+}
+.timelineHeading {
+    display: flex;
+    padding: 0.5rem 1rem;
+    color: var(--accent-colour);
+}
+.timelineContents {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+.timelineFullSeparator {
+    border-bottom: 1px solid var(--standard-button-outline);
+    width: 100%;
+}
 .navigation .light {
     color: var(--contrast-colour);
 }
