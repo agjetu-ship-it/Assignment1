@@ -44,6 +44,7 @@ import { DomainNameSystem } from "./pages/dns.js";
 import { HyperTextTransferProtocol } from "./pages/http.js";
 import { HypertextMarkupLanguage } from "./pages/html.js";
 import { LossyAndLosslessCompression } from "./pages/lossyAndLosslessCompression.js";
+import { IPAddressAndMACAddress } from "./pages/ipAddress.js";
 export const AppContext = React.createContext<MyAppContext | undefined>(undefined);
 export function App() {
     // const [isPageNotFound, setIsPageNotFound] = useState<boolean>(false);
@@ -236,6 +237,12 @@ export function App() {
           linkTo: "/definitions/lossyandlosslesscompression",
           image: "https://www.opticalillusion.net/wp-content/uploads/2009/02/shakeok.jpg",
           minutesToRead: 1
+     },
+     {
+          title: "Internet Port Address and Media Access Control Address",
+          description: "These two addresses ensure you are unique",
+          linkTo: "/definitions/internetportaddressandmediaaccesscontroladdress",
+          image: "https://raw.githubusercontent.com/DOGNET-SUPERB-TECHNOLOGIES/cdn/main/macAddress.png"
      }
     ]);
     const [miniNavOpen, setMiniNavOpen] = useState<boolean>(false);
@@ -289,6 +296,7 @@ export function App() {
                     <Route path="/definitions/hypertexttransferprotocol" element={<HyperTextTransferProtocol/>} />
                     <Route path="/definitions/hypertextmarkuplanguage" element={<HypertextMarkupLanguage/>} />
                     <Route path="/definitions/lossyandlosslesscompression" element={<LossyAndLosslessCompression/>} />
+                    <Route path="/definitions/internetportaddressandmediaaccesscontroladdress" element={<IPAddressAndMACAddress/>} />
                     <Route path="/definitions" element={<BlogsPage blogs={blogs}/>} />
                     <Route path="/featured_definitions" element={<FeaturedBlogs/>} />
                     <Route path="/login" element={<Login/>} />
