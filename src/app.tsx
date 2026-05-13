@@ -43,6 +43,7 @@ import { TransmissionControlProtocolSlashInternetProtocol } from "./pages/tcpip.
 import { DomainNameSystem } from "./pages/dns.js";
 import { HyperTextTransferProtocol } from "./pages/http.js";
 import { HypertextMarkupLanguage } from "./pages/html.js";
+import { LossyAndLosslessCompression } from "./pages/lossyAndLosslessCompression.js";
 export const AppContext = React.createContext<MyAppContext | undefined>(undefined);
 export function App() {
     // const [isPageNotFound, setIsPageNotFound] = useState<boolean>(false);
@@ -228,6 +229,13 @@ export function App() {
           linkTo: "/definitions/hypertextmarkuplanguage",
           image: "https://cdn.britannica.com/94/123894-050-53EC378E/Tim-Berners-Lee-2005.jpg",
           minutesToRead: 1
+     },
+     {
+          title: "Lossless and Lossy Compression",
+          description: "Compression size and detail matters",
+          linkTo: "/definitions/lossyandlosslesscompression",
+          image: "https://www.opticalillusion.net/wp-content/uploads/2009/02/shakeok.jpg",
+          minutesToRead: 1
      }
     ]);
     const [miniNavOpen, setMiniNavOpen] = useState<boolean>(false);
@@ -280,6 +288,7 @@ export function App() {
                     <Route path="/definitions/domainnamesystem" element={<DomainNameSystem/>} />
                     <Route path="/definitions/hypertexttransferprotocol" element={<HyperTextTransferProtocol/>} />
                     <Route path="/definitions/hypertextmarkuplanguage" element={<HypertextMarkupLanguage/>} />
+                    <Route path="/definitions/lossyandlosslesscompression" element={<LossyAndLosslessCompression/>} />
                     <Route path="/definitions" element={<BlogsPage blogs={blogs}/>} />
                     <Route path="/featured_definitions" element={<FeaturedBlogs/>} />
                     <Route path="/login" element={<Login/>} />
