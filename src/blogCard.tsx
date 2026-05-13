@@ -14,5 +14,5 @@ export function MinuteToReadTime({mins}: {mins: number}) {
     </p>
 }
 export function BlogDescription({children}: {children?: React.ReactNode}) {
-    return <p>{children}</p>;
+    return <p className="blogDescription">{children}</p>;
 }
