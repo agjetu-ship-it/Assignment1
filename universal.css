@@ -134,9 +134,12 @@ header {
     /* display: flex;
     flex-wrap: wrap; */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 1rem;
 }
+
 .timelineYearCard {
     border: 1px solid var(--standard-button-outline);
 }
