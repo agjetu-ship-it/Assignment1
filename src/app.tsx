@@ -283,7 +283,7 @@ export function App() {
           title: "Virtual Private Network",
           description: "A tool used to encrypt your connection",
           linkTo: "/definitions/virtualprivatenetwork",
-          image: "https://assets.bytebytego.com/diagrams/0052-how-a-vpn-works.png",
+          image: "https://raw.githubusercontent.com/DOGNET-SUPERB-TECHNOLOGIES/cdn/main/bytegogovpn.png",
           minutesToRead: 1
      },
      {
